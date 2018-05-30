@@ -1,0 +1,12 @@
+1--how to handle layout design not coming
+------------------------------------------------
+select design surface
+                    1--> change mark point from design to blueprint
+                    2--> and then blueprint to design
+
+2--without using locationlistener how to get current location by google map api
+---------------------------------------------------------------------------------
+    inside onMapReady()
+    --------------------
+    set mMap.setMylocationEnabled(true);
+
