@@ -1,0 +1,47 @@
+to convert araryList to array
+-----------------------------------
+1--don't use toArray() method may throw exception
+use for loop
+---------------------------------------------------
+Here i_array is an array of Info_Points(it is class name) Class
+and
+arrayList is a list of Info_Points objects
+
+            Info_Points i_array[] = new Info_Points[arrayList.size()];
+            for (int i=0;i<arrayList.size();i++)
+            {
+                i_array[i]=arrayList.get(i);
+            }
+
+..............................................................................................................
+2 types of apk
+--------------------
+1--debug mode
+------------
+appname-app-src-debug-resource folder
+2--release mode(for releasing it in playStore)
+-------------
+appname-app-src-release-resource folder
+
+for adding google key api
+---------------------------
+Why google map is not opening in signed apk?
+-----------------------------------------------
+1--It sounds like you only have the API key entered in the debug google_maps_api.xml.
+Also, it sounds like you're using the same API key for debug and release,
+but you still need to enter it in the google_maps_api.xml under the release folder as well as the one in the debug folder.
+
+It's a little confusing,
+because when the project is in Android view,
+you can only see the debug file (although it should have (debug) in parenthesis next to it in that view).
+
+In order to modify the release version,
+switch to Project view by using the dropdown in the upper left of the Project Explorer.
+Then, expand app/src/, and you will see subfolders debug and release.
+Under there, you should see two separate google_maps_api.xml files under debug/res/values and release/res/values.
+
+Make sure that the API key is populated in the google_maps_api.xml file under the release/res/values folder,
+since this is the one that will be used for the signed release apk.
+
+2--during adding apikey in the release folder, do follow the steps to create the registered key.
+that may demand a payment.
