@@ -7,13 +7,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public  class DBhelper extends SQLiteOpenHelper {
     SQLiteDatabase db;
+
     public static  final String DatabaseName="mydatabase_ex";
     public static final int Database_Version=1;
     public static final String Table_Name="area_info";
 
 
     DBhelper(Context context)
-
     {
 
         super(context,DatabaseName,null,Database_Version);
