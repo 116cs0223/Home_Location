@@ -1,12 +1,11 @@
 package com.example.hp.home_location;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DBhelper extends SQLiteOpenHelper {
+public  class DBhelper extends SQLiteOpenHelper {
     SQLiteDatabase db;
     public static  final String DatabaseName="mydatabase_ex";
     public static final int Database_Version=1;
